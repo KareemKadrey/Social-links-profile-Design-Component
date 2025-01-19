@@ -1,0 +1,90 @@
+/* - Weights: 400, 600, 700 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --green-color: hsl(75, 94%, 57%);
+  --grey--400: hsl(0, 0%, 70%);
+  --grey--700: hsl(0, 0%, 20%);
+  --grey--800: hsl(0, 0%, 12%);
+  --grey--900: hsl(0, 0%, 8%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Inter", serif;
+  background-color: var(--grey--900);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 600px;
+  background-color: var(--grey--800);
+  border-radius: 10px;
+}
+.imgCont img {
+  width: 90px;
+  height: 90px;
+}
+.imgCont {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: var(--green-color);
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 14px;
+  color: var(--grey--400);
+}
+
+.btn {
+  color: white;
+  background-color: var(--grey--700);
+  border: none;
+  padding: 15px 100px;
+  margin: 8px 10px;
+  width: 80%;
+  border-radius: 10px;
+  font-weight: 700;
+  white-space: nowrap; /* Prevent text from wrapping */
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--green-color);
+  color: var(--grey--700);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 330px;
+    height: 580px;
+  }
+
+  .btn {
+    width: 85%;
+  }
+}
